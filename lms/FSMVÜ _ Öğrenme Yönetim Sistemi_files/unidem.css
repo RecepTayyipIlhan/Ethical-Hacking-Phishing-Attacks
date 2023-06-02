@@ -1,0 +1,226 @@
+body {
+	color: #055467 !important;
+	background:url("../img/background.jpg") 0px 0px no-repeat fixed; background-position:fixed;  min-height: 500px; background-size: 100%;	
+}
+
+.thm-back{
+    background-color: #006881 !important; 
+    border-color: #006881 !important;
+}
+	    
+
+.logo {
+	display: block;
+	padding: 10px 0;
+}
+
+.logo img {
+	display: block;
+	max-height: 100px;
+	width: auto;
+	max-width: 100%;
+}
+
+.login-container {
+	margin-top: 50px;
+	background: rgba(255,255,255,.5);
+}
+
+.login-wrapper {
+	padding: 40px 0;
+}
+
+.login-wrapper form {
+	padding-right: 140px;
+}
+
+.login-wrapper #username {
+}
+
+.login-wrapper #password {
+}
+
+.login-wrapper #username,
+.login-wrapper #password {
+	height: 46px;
+	background-color: #fff;
+	padding: 0 15px;
+}
+
+.login-wrapper h4 {
+	color: #50575f;
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+.login-wrapper p {
+	
+}
+
+.login-wrapper .btn-login {
+	padding: 13px;
+	background: #409d7e;
+}
+
+.login-wrapper .right-img {
+	display: block;
+	max-width: 100%;
+}
+
+.footer {
+	color: #000000;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.footer hr {
+	border-top: 1px solid rgb(0 0 0 / 23%);
+}
+
+.footer .footer-links {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.footer .footer-links a {
+	display: block;
+	margin-left: 10px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.footer .footer-links a:before {
+	content: '|';
+	margin-right: 10px;
+}
+
+.footer .footer-links a:last-child:before {
+	display: none;
+}
+
+.map-container{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.login-wrapper form {
+		padding-right: 0;
+	}
+	.footer .footer-links {
+		flex-direction: column;
+		text-align: center !important;
+	}
+	.footer .footer-links a {
+		margin: 0 0 10px;
+	}
+	.footer .footer-links a:before {
+		display: none;
+	}
+	.login-wrapper h4 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.login-wrapper p {
+		margin-bottom: 15px !important
+	}
+}
+
+
+.humane,
+.humane-unidem {
+  position: fixed;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 100000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.humane,
+.humane-unidem {
+  font-family: Ubuntu, Arial, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  min-width: 150px;
+  color: #fff;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.6);
+  -moz-transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+.humane p,
+.humane-unidem p,
+.humane ul,
+.humane-unidem ul {
+  margin: 0;
+  padding: 0;
+}
+.humane ul,
+.humane-unidem ul {
+  list-style: none;
+}
+.humane.humane-unidem-info,
+.humane-unidem.humane-unidem-info {
+	background-color: #00BCD4;
+    border: 1px solid #1e8596;
+}
+.humane.humane-unidem-success,
+.humane-unidem.humane-unidem-success {
+	background-color: #4caf50;
+    border: 1px solid #1b861f;
+}
+.humane.humane-unidem-error,
+.humane-unidem.humane-unidem-error {
+	background-color: #F44336;
+    border: 1px solid #9c231a;
+}
+.humane.humane-animate,
+.humane-unidem.humane-unidem-animate {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.humane.humane-animate:hover,
+.humane-unidem.humane-unidem-animate:hover {
+  opacity: 0.2;
+}
+.humane.humane-animate,
+.humane-unidem.humane-unidem-js-animate {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.humane.humane-animate:hover,
+.humane-unidem.humane-unidem-js-animate:hover {
+  opacity: 0.2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+}

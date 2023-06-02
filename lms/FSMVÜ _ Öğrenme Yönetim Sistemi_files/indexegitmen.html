@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Wizard-v10</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="./montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="./material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="vsc-initialized">
+	
+		<div class="wizard-v10-content">
+			<div class="wizard-form">
+				
+		        <form class="form-register" action="https://lms.fsm.edu.tr/UE2/login/kvkk_updatestatus.php" method="post" logcheck="1">
+					<input type="hidden" name="onay" value="1">
+		        	<div id="form-total" role="application" class="wizard clearfix"><div class="steps clearfix"><ul role="tablist"><li role="tab" aria-disabled="false" class="first current" aria-selected="true"><a id="form-total-t-0" href="https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html#form-total-h-0" aria-controls="form-total-p-0"><span class="current-info audible"> </span><span class="title">1</span></a></li><li role="tab" aria-disabled="false" class="last"><a id="form-total-t-1" href="https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html#form-total-h-1" aria-controls="form-total-p-1"><span class="title">2</span></a></li></ul></div><div class="content clearfix">
+		        		<!-- SECTION 1 -->
+			            <h2 id="form-total-h-0" tabindex="-1" class="title current">1</h2>
+			            <section id="form-total-p-0" role="tabpanel" aria-labelledby="form-total-h-0" class="body current" aria-hidden="false">
+			                <div class="inner">
+								<iframe src="./akademisyenaydinlatma.html" width="100%" frameborder="0" height="250px" title="Öğrenci Aydınlatma Metni"></iframe>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2 id="form-total-h-1" tabindex="-1" class="title">2</h2>
+			            <section id="form-total-p-1" role="tabpanel" aria-labelledby="form-total-h-1" class="body" aria-hidden="true" style="display: none;">
+			                <div class="inner">
+								<iframe src="./akademisyenriza.html" width="100%" frameborder="0" height="250px" title="Öğrenci Aydınlatma Metni"></iframe>
+							</div>
+			            </section>
+			            
+		        	</div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="disabled" aria-disabled="true"><a href="https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html#previous" id="previous" role="menuitem">Önceki Adım</a></li><li aria-hidden="false" aria-disabled="false"><a href="https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html#next" id="next" role="menuitem">Sonraki Adım</a></li><li aria-hidden="true" style="display: none;"><a href="https://lms.fsm.edu.tr/ogrencimodal/indexegitmen.html#finish" id="finish" role="menuitem">Okudum Onaylıyorum</a></li></ul></div></div>
+		        </form>
+			</div>
+		</div>
+	
+	<script src="./jquery-3.3.1.min.js.indir"></script>
+	<script src="./jquery.steps.js.indir"></script>
+	<script src="./main.js.indir"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#finish").click(function(){
+			$.ajax({
+				type: "POST",
+				url: '/UE2/login/kvkk_updatestatus.php',
+				data: {
+					onay: "1",
+				},
+				success: function(res){
+					//console.log(res);
+					window.location.href = 'kayitok.html';
+				}
+			});
+		  });
+		});
+		</script>
+
+</body></html>
